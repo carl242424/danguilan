@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/danguilan/static/css/main.53017af2.css",
+    "main.js": "/danguilan/static/js/main.478756b7.js",
+    "static/js/453.664b62b4.chunk.js": "/danguilan/static/js/453.664b62b4.chunk.js",
+    "static/media/car_rental_system.jpg": "/danguilan/static/media/car_rental_system.6f04af60777a585d1a9c.jpg",
+    "static/media/voting_system.jpg": "/danguilan/static/media/voting_system.78947d107ea1377bc8e1.jpg",
+    "static/media/cinema_ticketing_system.jpg": "/danguilan/static/media/cinema_ticketing_system.13f4167f98ae85630c5a.jpg",
+    "static/media/logo.svg": "/danguilan/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/danguilan/index.html",
+    "main.53017af2.css.map": "/danguilan/static/css/main.53017af2.css.map",
+    "main.478756b7.js.map": "/danguilan/static/js/main.478756b7.js.map",
+    "453.664b62b4.chunk.js.map": "/danguilan/static/js/453.664b62b4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53017af2.css",
+    "static/js/main.478756b7.js"
+  ]
+}
