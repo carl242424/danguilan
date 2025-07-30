@@ -1,0 +1,126 @@
+.navbar {
+  display: flex;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(100, 116, 139, 0.08);
+  position: relative;
+  min-height: 60px;
+  z-index: 100;
+}
+
+/* Hamburger menu button */
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 8px;
+  z-index: 1001;
+  padding: 0;
+}
+.navbar-toggle .bar {
+  display: block;
+  height: 4px;
+  width: 26px;
+  background: #4f46e5;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+.navbar-toggle.open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.navbar-toggle.open .bar:nth-child(2) {
+  opacity: 0;
+}
+.navbar-toggle.open .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Navbar links container */
+.navbar-links {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+/* Nav link styles (do not change as per instruction) */
+.nav-link {
+  text-decoration: none;
+  color: #4f46e5;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 8px 18px;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  background: transparent;
+  border: 1.5px solid transparent;
+}
+
+.nav-link:hover {
+  background: rgba(224, 231, 255, 0.5); /* semi-transparent overlay */
+  color: #3730a3;
+  border: 1.5px solid #a5b4fc;
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.08);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: flex-start;
+    padding: 0.5rem 0.5rem;
+    position: relative;
+  }
+  .navbar-toggle {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+    box-shadow: 0 2px 8px rgba(100, 116, 139, 0.08);
+    z-index: 1000;
+    padding: 0.5rem 0;
+    gap: 0;
+    align-items: stretch;
+  }
+  .navbar-links.show {
+    display: flex;
+  }
+  .nav-link {
+    width: 100%;
+    text-align: left;
+    padding: 12px 24px;
+    border-radius: 0;
+    border: none;
+  }
+}
+@media (max-width: 480px) {
+  .navbar {
+    min-height: 48px;
+    padding: 0.25rem 0.25rem;
+  }
+  .navbar-toggle {
+    width: 32px;
+    height: 32px;
+  }
+  .navbar-toggle .bar {
+    width: 22px;
+    height: 3px;
+    margin: 3px 0;
+  }
+  .nav-link {
+    font-size: 1rem;
+    padding: 10px 16px;
+  }
+}

@@ -1,0 +1,205 @@
+.about-title {
+    font-size: 2.5rem;
+    color: #4f46e5;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.about-description {
+    font-size: 1.2rem;
+    color: #334155;
+    line-height: 1.7;
+    margin: 0 auto 2rem auto;
+    text-align: center;
+}
+.skills-section {
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-title {
+    font-size: 2rem;
+    color: #4f46e5;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-item {
+    background: #fff;
+    color: #4f46e5;
+    border: 2px solid #a5b4fc;
+    border-radius: 8px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(79,70,229,0.08);
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+    animation: skillFadeIn 0.6s cubic-bezier(.4,1.4,.6,1) forwards;
+}
+
+@keyframes skillFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.skill-item-hovered,
+.skill-item:hover {
+    background: #4f46e5;
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(79,70,229,0.15);
+    transform: translateY(-8px) scale(1.08) rotate(-2deg);
+    z-index: 2;
+}
+
+.skill-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+    transition: transform 0.3s cubic-bezier(.4,1.4,.6,1);
+    filter: drop-shadow(0 2px 6px rgba(79,70,229,0.08));
+}
+
+.skill-icon-animated,
+.skill-item:hover .skill-icon {
+    transform: scale(1.18) rotate(-10deg);
+    filter: drop-shadow(0 4px 12px #6366f1aa);
+}
+
+.skill-label {
+    display: inline-block;
+    vertical-align: middle;
+    transition: color 0.2s;
+}
+
+.about-simple-wrapper {
+    width: 100%;
+    max-width: 700px;
+    margin: 60px auto 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.about-simple-title {
+    font-size: 2.2rem;
+    color: #4f46e5;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.about-simple-desc {
+    font-size: 1.1rem;
+    color: #64748b;
+    margin-bottom: 2.2rem;
+}
+
+.about-simple-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.about-simple-skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1rem;
+    color: #4f46e5;
+    cursor: pointer;
+    transition: color 0.2s, transform 0.2s;
+}
+.about-simple-skill:hover, .about-simple-skill.hovered {
+    color: #fbbf24;
+    transform: scale(1.08);
+}
+
+.about-simple-skill-icon {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    margin-bottom: 0.2rem;
+    transition: transform 0.2s;
+}
+.about-simple-skill:hover .about-simple-skill-icon,
+.about-simple-skill.hovered .about-simple-skill-icon {
+    transform: scale(1.15) rotate(-8deg);
+}
+
+.about-simple-skill-label {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.about-large {
+    max-width: 900px;
+}
+.about-large-title {
+    font-size: 3rem;
+}
+.about-large-desc {
+    font-size: 1.35rem;
+    margin-bottom: 2.8rem;
+}
+.about-language-title {
+    font-size: 1.5rem;
+    color: #4f46e5;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    margin-top: 0.5rem;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .about-simple-skills {
+        gap: 0.7rem;
+    }
+    .about-simple-skill-icon {
+        width: 30px;
+        height: 30px;
+    }
+    .about-simple-title {
+        font-size: 1.3rem;
+    }
+    .about-large-title {
+        font-size: 1.7rem;
+    }
+    .about-large-desc {
+        font-size: 1.05rem;
+    }
+    .about-language-title {
+        font-size: 1.1rem;
+    }
+}
